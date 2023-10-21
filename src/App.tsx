@@ -8,10 +8,11 @@ import { EditCastMember } from "./features/cast/EditCastMember";
 import { ListCastmembers } from "./features/cast/ListCastmembers";
 import { CategoryCreate } from "./features/categories/CreateCategory";
 import { CategoryEdit } from "./features/categories/EditCategory";
-import { CategoryList } from "./features/categories/ListCaegory";
+import { CategoryList } from "./features/categories/ListCategory";
 import { GenreCreate } from "./features/genre/GenreCreate";
 import { GenreEdit } from "./features/genre/GenreEdit";
 import { GenreList } from "./features/genre/GenreList";
+import { UploadList } from "./features/uploads/UploadList";
 import { VideosCreate } from "./features/videos/VideosCreate";
 import { VideosEdit } from "./features/videos/VideosEdit";
 import { VideosList } from "./features/videos/VideosList";
@@ -21,6 +22,7 @@ import "./App.css";
 function App() {
   return (
     <Layout>
+      <UploadList />
       <Routes>
         <Route path="/" element={<CategoryList />} />
 
